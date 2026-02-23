@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kay-otic But Cute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bloggies.css">
+</head>
+<body>
+  <header>
+    <h1 class="animated-title">KAY-OTIC BUT CUTE</h1>
+    <p class="tagline">Messy Stories, sweet vibes and a sprinkle of chaotic.</p>
+  </header>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav
+
+<main>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="profile-card">
+      <img src="mee.jpg" alt="Profile Photo" class="profile-img">
+      <div class="profile-info">
+        <p>Hi, I’m <strong>Mikaila Villaruel</strong> — but you can call me Mikai or Kay. This blog is my way of connecting with you!</p>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight-card">
+        <p>📚 Favorite To Read</p>
+        <img src="wear.jpg">
+        <span>Quickly Wear the Face of the Villain</span>
+      </div>
+      <div class="highlight-card">
+        <p>🌏 Dream Travel Spot</p>
+        <img src="japan.jpg">
+        <span>Japan</span>
+      </div>
+      <div class="highlight-card">
+        <p>🍟 Snack Obsession</p>
+        <img src="loveit.jpg">
+        <span>Ice Cream & Fries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <h2>Blog Page</h2>
+  <p>Click an envelope to open and read the post!</p>
+
+  <details class="envelope">
+    <summary><span class="flap">📩</span> Post 1: Fresh Start</summary>
+    <div class="content">
+      <p>My life improved significantly with the arrival of my two cats. Supposedly, I should only adopt Nala, but my cousin insisted on including Uno and bringing him to my house. They've brought warmth, joy, and companionship into my daily life, and my mother now enjoys them. ‎ My pets are like family members, teaching me patience, care, and the importance of unconditional love. They have brightened my days, filled my heart, and made my home feel more complete.</p>
+      <div class="post-gallery">
+        <img src="baby.jpg" alt="Photo 1">
+        <img src="lakinakonti.jpg" alt="Photo 2">
+        <img src="kalakina.jpg" alt="Photo 3">
+      </div>
+    </div>
+  </details>
+
+  <details class="envelope">
+    <summary><span class="flap">📩</span> Post 2: Little Comforts That Carry Me</summary>
+    <div class="content">
+      <p>Life isn’t always neat sometimes it’s loud, messy, and unpredictable. But in the middle of that chaos, I’ve found little comforts that remind me to slow down and breathe. Whether it’s a warm snack, a quiet corner with my favorite book, or the soft purr of my cats, these moments teach me that comfort doesn’t erase the chaos it makes it bearable, even beautiful.</p>
+      <div class="post-gallery">
+        <img src="tulogyarn.jpg" alt="Photo 1">
+        <img src="cuteyarn.jpg" alt="Photo 2">
+        <img src="watts.png" alt="Photo 3">
+      </div>
+    </div>
+  </details>
+  
+  <details class="envelope">
+    <summary><span class="flap">📩</span> Post 3: My Creative Side</summary>
+    <div class="content">
+      <p>Showcasing my little art. </p>
+      <div class="post-gallery">
+        <img src="boi.jpg" alt="Photo 1">
+        <img src="law.jpg" alt="Photo 2">
+        <img src="mame.jpg" alt="Photo 3">
+      </div>
+    </div>
+  </details>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Gallery Page</h2>
+  <p>Here’s a collection of my favorite snapshots. Each photo tells a little story of Kay’s world.</p>
+  <div class="gallery-grid">
+    <img src="sweethome.jpg" alt="Gallery Photo 1">
+    <img src="tababi.jpg" alt="Gallery Photo 2">
+    <img src="unonala.jpg" alt="Gallery Photo 3">
+    <img src="birthday.jpg" alt="Gallery Photo 4">
+    <img src="unoppy.jpg" alt="Gallery Photo 5">
+    <img src="mathree.jpg" alt="Gallery Photo 6">
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Page</h2>
+  <p>Want to say hi? Drop me a message below!</p>
+
+  <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('success-note').style.display='block';">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div id="success-note" class="success-note">
+    ✅ Message delivered! Kay appreciates your time and will reply soon.
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>© 2026 "Kay-bye for now, but come back soon" | Made with 💖 and purrs </p>
+  </footer>
+</body>
+</html>
