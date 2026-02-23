@@ -207,7 +207,7 @@ nav ul li a:hover {
   border: 2px solid #ffb6c1;
 }
 
-.post-gallery {s
+.post-gallery {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
@@ -215,8 +215,9 @@ nav ul li a:hover {
 
 .post-gallery img {
   width: 30%;
+  height: 180px;       
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: cover;   
   border: 2px solid #ffb6c1;
 }
 
