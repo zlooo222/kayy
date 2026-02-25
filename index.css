@@ -325,16 +325,6 @@ footer {
   50% { transform: translateY(-10px); }
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 0.5rem 0;
-  }
-
   .animated-title {
     font-size: 2.5rem;
   }
