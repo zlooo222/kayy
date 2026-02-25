@@ -96,6 +96,7 @@ nav ul li a:hover {
   border-radius: 50%;
   border: 3px solid #ff69b4;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .highlights {
@@ -125,13 +126,11 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-
 .highlight-card:hover {
   transform: scale(1.05);
   background: #ffb6c1;
   color: #fff;
 }
-
 
 .envelope {
   margin: 1.5rem 0;
@@ -165,52 +164,10 @@ nav ul li a:hover {
   padding: 1rem;
   background: #fff;
   animation: slideDown 0.5s ease;
-
   display: flex;
   flex-direction: column;     
   align-items: center;        
   text-align: center;        
-}
-
-
-.post-img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-direction: row-reverse; 
-}
-
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #ff69b4;
-  object-fit: cover; 
-}
-
-.fun-facts-gallery {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.fun-facts-gallery img {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 2px solid #ffb6c1;
 }
 
 .post-gallery {
@@ -222,8 +179,9 @@ nav ul li a:hover {
 }
 
 .post-gallery img {
-  width: 30%;
-  height: 250px;       
+  width: 100%;
+  max-width: 250px;
+  height: auto;       
   border-radius: 8px;
   object-fit: cover;   
   border: 2px solid #ffb6c1;
@@ -238,7 +196,7 @@ nav ul li a:hover {
 
 .gallery-grid img {
   width: 100%;
-  height: 200px;       
+  height: auto;       
   border-radius: 10px;
   object-fit: cover;   
   border: 2px solid #ff69b4;
@@ -248,35 +206,6 @@ nav ul li a:hover {
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
-
-.social-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.social-icon img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #ff69b4; 
-  background: #ffe4e1;       
-  padding: 5px;
-  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
-}
-
-.social-icon.fb img:hover {
-  transform: scale(1.1);
-  border-color: #ff1493; 
-  background: #ffc0cb;   
-}
-
-.social-icon.ig img:hover {
-  transform: scale(1.1);
-  border-color: #ff1493; 
-  background: #ffc0cb;   
-}
-
 
 .contact-form {
   display: flex;
@@ -299,6 +228,7 @@ nav ul li a:hover {
   font-size: 1rem;
   background: #fffafc;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
 }
 
 .contact-form input:focus,
@@ -337,6 +267,47 @@ nav ul li a:hover {
   animation: fadeIn 0.5s ease;
 }
 
+.subscribe-form input {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ffb6c1; 
+  border-radius: 25px; 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  background: #fffafc; 
+  color: #333;
+  width: 250px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-form input::placeholder {
+  color: #ff69b4; 
+  font-style: italic;
+}
+
+.subscribe-form input:focus {
+  border-color: #ff69b4;
+  outline: none;
+  box-shadow: 0 0 8px #ffb6c1;
+}
+
+.subscribe-form button {
+  padding: 0.8rem 1.5rem;
+  background: #ffe4e1; 
+  color: #ff1493; 
+  border: 2px solid #ff69b4;
+  border-radius: 25px; 
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background: #ffb6c1; 
+  color: #fff; 
+  transform: scale(1.05);
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -354,3 +325,31 @@ footer {
   50% { transform: translateY(-10px); }
 }
 
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .animated-title {
+    font-size: 2.5rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-title {
+    font-size: 2rem;
+    animation: none; 
+  }
